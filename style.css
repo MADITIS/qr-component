@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --desktop-width: 1440px;
+    --mobile-width: 375px;
+    --main-color: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayish-blue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --font-size-p: 15px;
+    --font-family: 'Outfit', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    /* width: 100vw; */
+    background-color: var(--light-gray);
+    height: 100vh;
+    font-family: var(--font-family);
+
+}
+
+h3 {
+    color: var(--dark-blue);
+    /* text-indent: 10px; */
+    /* width: 95%; */
+    /* text-align: left; */
+}
+
+.container{
+    /* margin: auto; */
+    width: var(--desktop-width);
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.main-container { 
+    margin: auto;
+    text-align: center;
+    width: 300px;
+    height: 500px;
+    background-color: var(--main-color);
+    border-radius: 13px;
+    /* padding: 0.5rem 0.5rem; */
+
+}
+
+.container > .main-container > div.item-container > img {
+    width: 95%;
+    /* text-align: center; */
+    /* background: center, center/cover; */
+    height: 95%;
+    margin: auto;
+    position: relative;
+    top: 10px;
+}
+
+.item-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    /* padding: 0.5rem 0.1rem; */
+    /* text-al0000ign: center; */
+
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0.2rem 0.3rem;
+    /* text-indent: ; */
+}
+
+.content > p {
+    /* text-align: left; */
+    font-size: var(--font-size-p);
+    color: var(--grayish-blue);
+    /* text-align: center; */
+    /* align-self: flex-start; */
+}
+
+@media screen and (max-width: 770px) {
+    .container {
+        max-width: var(--mobile-width);
+    }
+}
